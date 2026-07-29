@@ -1,7 +1,7 @@
 name: Validate and Provision SSH Key
 
 on:
-  pull_request:
+  pull_request_target:
     paths:
       - "ssh_keys.yaml"
 
@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }} # Fetch the student's fork code
       
       - name: Check syntax
         uses: GrantBirki/json-yaml-validate@v2.6.2
@@ -67,8 +69,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.pull_request.head.sha }} # Fetch the student's fork code
           fetch-depth: 0 # Required to fetch 'main' so the git diff works
-          
+
+      - name: Secure the provisioning script
+        # Overwrite any changes the student made to the script
+        run: git checkout origin/main -- .github/scripts/provision.sh
+
       - name: Run Provisioning Script
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
