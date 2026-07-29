@@ -1,0 +1,6 @@
+list(include('student_entry'))
+---
+student_entry:
+  name: str()
+  email: regex('^[a-zA-Z0-9._%+-]+@hs-nordhausen\\.de$')
+  ssh_key: regex('^ssh-ed25519 AAAA[0-9A-Za-z+/]+.*$')

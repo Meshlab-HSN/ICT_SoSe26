@@ -1,0 +1,76 @@
+name: Validate and Provision SSH Key
+
+on:
+  pull_request:
+    paths:
+      - "ssh_keys.yaml"
+
+permissions:
+  contents: read
+  pull-requests: write # Required for the bot to post comments
+
+jobs:
+  validate-yaml:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Check syntax
+        uses: GrantBirki/json-yaml-validate@v2.6.2
+        with:
+          use_dot_match: false
+          files: "ssh_keys.yaml"
+
+      - name: Install Yamale
+        run: pip install yamale
+
+      - name: Check schema and post error
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          if ! yamale --schema="_schema.yaml" ssh_keys.yaml > error.log 2>&1; then
+            
+            # 1. Build the comment in a file line-by-line to avoid YAML/Bash spacing clashes
+            echo "❌ **Format Validation Failed!**" > comment.md
+            echo "" >> comment.md
+            echo "Your \`ssh_keys.yaml\` entry was rejected. Here is the exact error from the validator:" >> comment.md
+            echo "" >> comment.md
+            echo "\`\`\`text" >> comment.md
+            
+            # 2. Append the actual Yamale output
+            cat error.log >> comment.md
+            
+            # 3. Close the code block
+            echo "\`\`\`" >> comment.md
+
+            if grep -q "ssh_key" error.log; then
+              echo "" >> comment.md
+              echo "💡 **Hint:** Your \`ssh_key\` format is invalid. It must start exactly with \`ssh-ed25519 AAAA\`. Make sure you copied the *entire* contents of your public key file!" >> comment.md
+            fi
+            
+            if grep -q "email" error.log; then
+              echo "" >> comment.md
+              echo "💡 **Hint:** Your \`email\` must end exactly with \`@hs-nordhausen.de\`." >> comment.md
+            fi
+            
+            # 4. Post the file as the PR comment
+            gh pr comment "$PR_NUMBER" -F comment.md
+            
+            # 5. Fail the action
+            exit 1
+          fi
+
+  provision-vm:
+    needs: validate-yaml
+    runs-on: self-hosted # Executes on the VM runner
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Required to fetch 'main' so the git diff works
+          
+      - name: Run Provisioning Script
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: bash .github/scripts/provision.sh

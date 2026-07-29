@@ -1,0 +1,4 @@
+# An entry has to look like:
+# - name: "<your name>"
+#   email: "<your email>"
+#   ssh_key: "<your public ssh key>"
