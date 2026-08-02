@@ -7,8 +7,8 @@
   email: "til.kaiser@hs-nordhausen.de"
   ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMhLXGRlPoJwqETZ0sDX3/aK+QleA6dd3Z6p2iI4ddM4"
 
-- name: "Til Kaiser"
-  email: "til.kaiser@hs-nordhausen.de"
+- name: "Test"
+  email: "test@hs-nordhausen.de"
   ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMhLXGRlPoJwqETZ0sDX3/aK+QleA6dd3Z6p2iI4ddM4"
 
 - name: "Bryan Sanchez"
