@@ -7,6 +7,10 @@
   email: "til.kaiser@hs-nordhausen.de"
   ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMhLXGRlPoJwqETZ0sDX3/aK+QleA6dd3Z6p2iI4ddM4"
 
+- name: "Til Kaiser"
+  email: "til.kaiser@hs-nordhausen.de"
+  ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMhLXGRlPoJwqETZ0sDX3/aK+QleA6dd3Z6p2iI4ddM4"
+
 - name: "Bryan Sanchez"
   email: "bryan-paul.sanchez-pazmino@hs-nordhausen.de"
   ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPP4kbgp/wvjz7xyCXjs/A/lS0DiASNC73DhzoSahnhb"
