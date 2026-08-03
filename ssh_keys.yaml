@@ -1,8 +1,3 @@
-# An entry has to look like:
-# - name: "<your name>"
-#   email: "<your email>"
-#   ssh_key: "<your public ssh key>"
-
 - name: "Til Kaiser"
   email: "til.kaiser@hs-nordhausen.de"
   ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMhLXGRlPoJwqETZ0sDX3/aK+QleA6dd3Z6p2iI4ddM4"
@@ -10,3 +5,7 @@
 - name: "Bryan Sanchez"
   email: "bryan-paul.sanchez-pazmino@hs-nordhausen.de"
   ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPP4kbgp/wvjz7xyCXjs/A/lS0DiASNC73DhzoSahnhb"
+
+- name: "Hammad Saifi"
+  email: "hammad.saifi@hs-nordhausen.de"
+  ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDhLTs+Ww8+X8S4g7+KbjdrsPfYJQQ7ORJY36YbF4mXp hammad.saifi@hs-nordhausen.de"
