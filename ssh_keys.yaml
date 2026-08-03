@@ -13,4 +13,4 @@
 
 - name: "Mary Nirosa"
   email: "mary-nirosa.regepenard@hs-nordhausen.de"
-  ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL09MLQU2vZSYdouJaqficGX+PdtJ2pWrScB4lmkW4u77 mary-nirosa@ict"
+  ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL09MLQUvZSYdouJaqficGX+PdtJ2pWrScB4lmkW4u77 mary-nirosa@ict"
