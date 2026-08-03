@@ -1,3 +1,15 @@
-  name: "fakhrullashaik28"
+# An entry has to look like:
+# - name: "<your name>"
+#   email: "<your email>"
+#   ssh_key: "<your public ssh key>"
+
+- name: "Til Kaiser"
+  email: "til.kaiser@hs-nordhausen.de"
+  ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMhLXGRlPoJwqETZ0sDX3/aK+QleA6dd3Z6p2iI4ddM4"
+
+- name: "Bryan Sanchez"
+  email: "bryan-paul.sanchez-pazmino@hs-nordhausen.de"
+  ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPP4kbgp/wvjz7xyCXjs/A/lS0DiASNC73DhzoSahnhb"
+- name: "fakhrullashaik28"
   email: "fakhrulla.shaik@hs-nordhausen.de"
   ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHXmG6Nz2lz1XPVq3Qp0tw816/3syr+hRiP4fHNEK2BE-fakhrulla.shaik@hs-nordhausen.de"
