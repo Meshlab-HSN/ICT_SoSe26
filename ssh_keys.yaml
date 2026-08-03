@@ -10,3 +10,7 @@
 - name: "Bryan Sanchez"
   email: "bryan-paul.sanchez-pazmino@hs-nordhausen.de"
   ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPP4kbgp/wvjz7xyCXjs/A/lS0DiASNC73DhzoSahnhb"
+
+- name: "Rahul Mukundsheth Gandevikar"
+  email: "rahul-mukundsheth.gandevikar@hs-nordhausen.de"
+  ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPy3213ksnyPbZ/c7rWdKpJ9eDV2Sn0U1/Ks8Pt5sJYc rahul-mukundsheth.gandevikar@hs-nordhausen.de"
