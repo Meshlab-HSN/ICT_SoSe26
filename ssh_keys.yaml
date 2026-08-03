@@ -13,4 +13,4 @@
 
 - name: "Siddika Bhanu Soyam"
   email: "siddika-bhanu.soyam@hs-nordhausen.de"
-  ssh_key:"ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB6fmdK4qEU0adkuTg8w4vErrz1CLfP2wtUWMtbOMWLw siddika-bhanu.soyam@hsnordhausen.de"
+  ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB6fmdK4qEU0adkuTg8w4vErrz1CLfP2wtUWMtbOMWLw siddika-bhanu.soyam@hsnordhausen.de"
