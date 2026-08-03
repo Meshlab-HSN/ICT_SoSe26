@@ -1,7 +1,7 @@
 
 
 - name: "Mahsa Darghayedi"
-  email: "mahsadarghayedi@hs-nordhasuen.de"
+  email: "mahsa.darghayedi@hs-nordhasuen.de"
   ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIu4V0sjuTsPqi0upVAyLxR5Jhb48jPoEqb6fTo7awld"
 
 - name: "Til Kaiser"
