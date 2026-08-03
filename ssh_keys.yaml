@@ -2,7 +2,7 @@
 
 - name: "Mahsa Darghayedi"
   email: "mahsadarghayedi@hs-nordhasuen.de"
-  ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBRrLgnP07zBrL5OIzLSjicLEv+Y5DR/19HkGJ/2x8g6"
+  ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIu4V0sjuTsPqi0upVAyLxR5Jhb48jPoEqb6fTo7awld"
 
 - name: "Til Kaiser"
   email: "til.kaiser@hs-nordhausen.de"
