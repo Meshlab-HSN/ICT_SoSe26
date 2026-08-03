@@ -8,12 +8,4 @@
 
 - name :"Mahsa Darghayedi"
   email: "mahsadarghayedi@hs-nordhasuen.de"
-  ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOtYG+AS3Kvu/CeeuIGuFBq3q66cPImVdS/0UXg8sIdp mdarghayedi@hs-nordhausen.de"
-
-- name: "Til Kaiser"
-  email: "til.kaiser@hs-nordhausen.de"
-  ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMhLXGRlPoJwqETZ0sDX3/aK+QleA6dd3Z6p2iI4ddM4"
-
-- name: "Bryan Sanchez"
-  email: "bryan-paul.sanchez-pazmino@hs-nordhausen.de"
-  ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPP4kbgp/wvjz7xyCXjs/A/lS0DiASNC73DhzoSahnhb"
+  ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBRrLgnP07zBrL5OIzLSjicLEv+Y5DR/19HkGJ/2x8g6 mahsadarghayedi@hs-nordhausen.de"
