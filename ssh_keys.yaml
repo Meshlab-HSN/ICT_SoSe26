@@ -1,7 +1,7 @@
-# An entry has to look like:
-# - name: "<your name>"
-#   email: "<your email>"
-#   ssh_key: "<your public ssh key>"
+
+ - name: "Nitish Sushant Khrolia"
+   email: "nitish-sushant.khrolia@hs-nordhausen.de"
+   ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMeIQLG+bzCrc1N3NucM0voq/LPCJ4+VSexYbQIYZSs2 nitish-sushant.khroli@hs-nordhausen.de"
 
 - name: "Til Kaiser"
   email: "til.kaiser@hs-nordhausen.de"
