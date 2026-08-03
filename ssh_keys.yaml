@@ -1,4 +1,11 @@
-# An entry has to look like:
+- me: "Hamd Farooq"
+    email: "yourname@hs-nordhausen.de"
+    ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAA...."name: "Hamd Farooq"
+    email: "yourname@hs-nordhausen.de"
+        ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAA....":- name: "Hamd Farooq"
+            email: "hamd.farooq@hs-nordhausen.de"
+                ssh_key: "":
+
 # - name: "<your name>"
 #   email: "<your email>"
 #   ssh_key: "<your public ssh key>"
